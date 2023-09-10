@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Registration Table</title>
+        <meta name="distribtion" content="First Assignment"/>
+        <meta charset="UTF-8"/>
+        <style>
+            h1{
+                color:red;
+                text-align: center;
+            }
+            #Comments{
+                text-align: center;
+            }
+            #buttons{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <h1><strong>Registration</strong></h1>
+            <hr>
+            <table border="2" align="center" width="900" height="550">
+                <tbody>
+                    <th colspan="2">Personal Data</th>
+                    <tr>
+                        <td>First Name</td>
+                        <td> <input type="text" placeholder="Enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" placeholder="Enter your last name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" required minlength="8" maxlength="12" required></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Gender</td>
+                        <td>
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="male" type="radio" checked name="gender">
+                            <label for="male">Male</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Martial Status</td>
+                        <td><select>
+                                <option>Single</option>
+                                <option>In a relationship</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <th colspan="2">Interests</th>
+                    <tr>
+                        <td>
+                            <input id="sports" type="checkbox">
+                            <label for="sports">Sports</label>
+                        </td>
+                        <td>
+                            <input id="music" type="checkbox">
+                            <label for="music">Music</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="books" type="checkbox" checked>
+                            <label for="books">Books</label>
+                        </td>
+                        <td>
+                            <input id="computers" type="checkbox">
+                            <label for="computers">Computers</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="fashion" type="checkbox">
+                            <label for="fashion">Fashion</label>
+                        </td>
+                        <td>
+                            <input id="movies" type="checkbox">
+                            <label for="movies">Movies</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th  colspan="2" id="Comments"> 
+                            <label for="Comments">Comments</label><br>
+                            <textarea name="message" cols="25" rows="5">
+                            </textarea>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="buttons">
+                        <input type="submit" value="ok">
+                        <input type="reset" value="cancel">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
